@@ -100,6 +100,7 @@
 \toclineone{3.}{Home Tasks}{2}
 \toclinetwo{3.1}{Earth Book}{2}
 \toclinetwo{3.2}{Presentation}{3}
+\toclinetwo{3.3}{Rocky Apache Host}{4}
 \newpage
 
 % =====================================================================
@@ -342,6 +343,41 @@ Presentation - A presentation document was left on stortinget.no; identify the e
 
 \begin{quote}
 \textbf{Flag\{Jørgen\}}
+\end{quote}
+
+\subsection{Rocky Apache Host}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent The challenge objective was to identify an IP address inside the \texttt{129.241.0.0/15} network where the host banner indicates \texttt{Apache 2.4.37} on \texttt{Rocky Linux}, using passive OSINT only (no active scanning).
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent A passive internet-wide search index (such as Shodan/Censys) was used with filters for:
+\begin{itemize}[leftmargin=2.2em]
+    \item Network: \texttt{129.241.0.0/15}
+    \item Web server: \texttt{Apache httpd}
+    \item Version: \texttt{2.4.37}
+    \item OS hint: \texttt{Rocky Linux}
+\end{itemize}
+
+\noindent This approach relies on already collected scan data from search engines, which keeps the method passive.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/rocky_apache_passive.png}
+    \caption{Passive query structure and result format used for the Rocky Apache host challenge}
+    \label{fig:rocky-apache-passive}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The identified host IP should be documented in the final report in the required flag format:
+\begin{quote}
+\textbf{FLAG\{<REPLACE\_WITH\_FOUND\_IP>\}}
 \end{quote}
 
 \end{document}
