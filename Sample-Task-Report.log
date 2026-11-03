@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.13)  3 NOV 2026 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.13)  3 NOV 2026 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -487,462 +487,462 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.199 \end{xltabular}
+l.204 \end{xltabular}
                       [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.201 \newpage
+l.206 \newpage
                [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 211.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 216.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 213.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 218.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 <media/earth_book_query.png, id=200, 915.42pt x 299.1175pt>
 File: media/earth_book_query.png Graphic file (type png)
 <use media/earth_book_query.png>
-Package pdftex.def Info: media/earth_book_query.png  used on input line 228.
+Package pdftex.def Info: media/earth_book_query.png  used on input line 233.
 (pdftex.def)             Requested size: 385.02547pt x 125.80649pt.
 <media/earth_book_spreadsheet.png, id=201, 915.42pt x 299.1175pt>
 File: media/earth_book_spreadsheet.png Graphic file (type png)
 <use media/earth_book_spreadsheet.png>
-Package pdftex.def Info: media/earth_book_spreadsheet.png  used on input line 246.
+Package pdftex.def Info: media/earth_book_spreadsheet.png  used on input line 251.
 (pdftex.def)             Requested size: 385.02547pt x 125.80649pt.
  [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.260 \end{quote}
+l.265 \end{quote}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.260 \end{quote}
+l.265 \end{quote}
                   <./media/earth_book_query.png> <./media/earth_book_spreadsheet.png>] [4]
 <media/strotinget_query.png, id=216, 1025.8325pt x 510.90875pt>
 File: media/strotinget_query.png Graphic file (type png)
 <use media/strotinget_query.png>
-Package pdftex.def Info: media/strotinget_query.png  used on input line 284.
+Package pdftex.def Info: media/strotinget_query.png  used on input line 289.
 (pdftex.def)             Requested size: 385.02547pt x 191.76181pt.
 <media/stortinget_metadata.png, id=217, 1101.11375pt x 844.15375pt>
 File: media/stortinget_metadata.png Graphic file (type png)
 <use media/stortinget_metadata.png>
-Package pdftex.def Info: media/stortinget_metadata.png  used on input line 296.
+Package pdftex.def Info: media/stortinget_metadata.png  used on input line 301.
 (pdftex.def)             Requested size: 385.02547pt x 295.17487pt.
  [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.300 
+l.305 
        <./media/strotinget_query.png>]
 <media/steine_query.png, id=225, 1117.17375pt x 157.58875pt>
 File: media/steine_query.png Graphic file (type png)
 <use media/steine_query.png>
-Package pdftex.def Info: media/steine_query.png  used on input line 305.
+Package pdftex.def Info: media/steine_query.png  used on input line 310.
 (pdftex.def)             Requested size: 271.7835pt x 38.33665pt.
 <media/steine_stortinget.png, id=226, 729.72626pt x 172.645pt>
 File: media/steine_stortinget.png Graphic file (type png)
 <use media/steine_stortinget.png>
-Package pdftex.def Info: media/steine_stortinget.png  used on input line 314.
+Package pdftex.def Info: media/steine_stortinget.png  used on input line 319.
 (pdftex.def)             Requested size: 385.02547pt x 91.09308pt.
 <media/steine_epost.png, id=227, 778.91pt x 789.95125pt>
 File: media/steine_epost.png Graphic file (type png)
 <use media/steine_epost.png>
-Package pdftex.def Info: media/steine_epost.png  used on input line 323.
+Package pdftex.def Info: media/steine_epost.png  used on input line 328.
 (pdftex.def)             Requested size: 385.02547pt x 390.47862pt.
  [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.327 
+l.332 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.327 
+l.332 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.327 
+l.332 
        <./media/stortinget_metadata.png> <./media/steine_query.png> <./media/steine_stortinget.png>]
 <media/linkedin_query.png, id=238, 556.0775pt x 92.345pt>
 File: media/linkedin_query.png Graphic file (type png)
 <use media/linkedin_query.png>
-Package pdftex.def Info: media/linkedin_query.png  used on input line 359.
+Package pdftex.def Info: media/linkedin_query.png  used on input line 364.
 (pdftex.def)             Requested size: 385.02547pt x 63.94073pt.
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.363 
+l.368 
        <./media/steine_epost.png>]
 <media/linkedin_result.png, id=245, 715.67375pt x 176.66pt>
 File: media/linkedin_result.png Graphic file (type png)
 <use media/linkedin_result.png>
-Package pdftex.def Info: media/linkedin_result.png  used on input line 371.
+Package pdftex.def Info: media/linkedin_result.png  used on input line 376.
 (pdftex.def)             Requested size: 385.02547pt x 95.04184pt.
 <media/linkedin_profile.png, id=246, 844.15375pt x 700.6175pt>
 File: media/linkedin_profile.png Graphic file (type png)
 <use media/linkedin_profile.png>
-Package pdftex.def Info: media/linkedin_profile.png  used on input line 380.
+Package pdftex.def Info: media/linkedin_profile.png  used on input line 385.
 (pdftex.def)             Requested size: 385.02547pt x 319.56187pt.
  [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.384 
+l.389 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.384 
+l.389 
        <./media/linkedin_query.png> <./media/linkedin_result.png>]
 <media/bazaar_query.png, id=255, 933.4875pt x 342.27875pt>
 File: media/bazaar_query.png Graphic file (type png)
 <use media/bazaar_query.png>
-Package pdftex.def Info: media/bazaar_query.png  used on input line 414.
+Package pdftex.def Info: media/bazaar_query.png  used on input line 419.
 (pdftex.def)             Requested size: 385.02547pt x 141.17604pt.
  [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.418 
+l.423 
        <./media/linkedin_profile.png>]
 <shodan_rocky.png, id=262, 1924.18875pt x 456.70625pt>
 File: shodan_rocky.png Graphic file (type png)
 <use shodan_rocky.png>
-Package pdftex.def Info: shodan_rocky.png  used on input line 459.
+Package pdftex.def Info: shodan_rocky.png  used on input line 464.
 (pdftex.def)             Requested size: 430.31812pt x 102.13425pt.
  [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.463 
+l.468 
        <./media/bazaar_query.png>]
 <media/statkraft_ip_history.png, id=269, 1269.74374pt x 724.7075pt>
 File: media/statkraft_ip_history.png Graphic file (type png)
 <use media/statkraft_ip_history.png>
-Package pdftex.def Info: media/statkraft_ip_history.png  used on input line 486.
+Package pdftex.def Info: media/statkraft_ip_history.png  used on input line 491.
 (pdftex.def)             Requested size: 385.02547pt x 219.7472pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <149.37697> not available
-(Font)              size <35.83> substituted on input line 498.
+(Font)              size <35.83> substituted on input line 503.
 
 [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.498 \end{verbatim}
+l.503 \end{verbatim}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.498 \end{verbatim}
+l.503 \end{verbatim}
                      <./shodan_rocky.png> <./media/statkraft_ip_history.png>]
 <media/zoneh_ip_archive.png, id=279, 1284.8pt x 670.505pt>
 File: media/zoneh_ip_archive.png Graphic file (type png)
 <use media/zoneh_ip_archive.png>
-Package pdftex.def Info: media/zoneh_ip_archive.png  used on input line 554.
+Package pdftex.def Info: media/zoneh_ip_archive.png  used on input line 559.
 (pdftex.def)             Requested size: 430.31812pt x 224.57198pt.
  [12] [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.608 \end{verbatim}
+l.613 \end{verbatim}
                      <./media/zoneh_ip_archive.png>]
 <media/ntnu_route_measurement.png, id=290, 1916.15875pt x 590.205pt>
 File: media/ntnu_route_measurement.png Graphic file (type png)
 <use media/ntnu_route_measurement.png>
-Package pdftex.def Info: media/ntnu_route_measurement.png  used on input line 616.
+Package pdftex.def Info: media/ntnu_route_measurement.png  used on input line 621.
 (pdftex.def)             Requested size: 430.31812pt x 132.53822pt.
 <media/ntnu_route_hops.png, id=291, 350.30875pt x 700.6175pt>
 File: media/ntnu_route_hops.png Graphic file (type png)
 <use media/ntnu_route_hops.png>
-Package pdftex.def Info: media/ntnu_route_hops.png  used on input line 630.
+Package pdftex.def Info: media/ntnu_route_hops.png  used on input line 635.
 (pdftex.def)             Requested size: 203.83417pt x 407.67337pt.
  [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.634 
+l.639 
        <./media/ntnu_route_measurement.png>] [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.661     \item \textbf
+l.666     \item \textbf
                        {Search Method} <./media/ntnu_route_hops.png>]
 <media/nmap_command.png, id=304, 630.355pt x 360.34625pt>
 File: media/nmap_command.png Graphic file (type png)
 <use media/nmap_command.png>
-Package pdftex.def Info: media/nmap_command.png  used on input line 673.
+Package pdftex.def Info: media/nmap_command.png  used on input line 678.
 (pdftex.def)             Requested size: 385.02547pt x 220.10231pt.
  [16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.705 \end{itemize}
+l.710 \end{itemize}
                     <./media/nmap_command.png>] [17]
 <media/source_inspection_comments.png, id=316, 615.29875pt x 231.86626pt>
 File: media/source_inspection_comments.png Graphic file (type png)
 <use media/source_inspection_comments.png>
-Package pdftex.def Info: media/source_inspection_comments.png  used on input line 829.
+Package pdftex.def Info: media/source_inspection_comments.png  used on input line 834.
 (pdftex.def)             Requested size: 385.02547pt x 145.09294pt.
  [18]
 <media/source_inspection_datalayer.png, id=321, 515.9275pt x 215.80624pt>
 File: media/source_inspection_datalayer.png Graphic file (type png)
 <use media/source_inspection_datalayer.png>
-Package pdftex.def Info: media/source_inspection_datalayer.png  used on input line 838.
+Package pdftex.def Info: media/source_inspection_datalayer.png  used on input line 843.
 (pdftex.def)             Requested size: 385.02547pt x 161.05739pt.
  [19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.874 \end{itemize}
+l.879 \end{itemize}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.874 \end{itemize}
+l.879 \end{itemize}
                     <./media/source_inspection_comments.png> <./media/source_inspection_datalayer.png>]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 926.
+            Default family used instead on input line 931.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 926.
+            Default family used instead on input line 931.
  [20]
 <media/protocol_forensics_headers.png, id=335, 702.625pt x 496.85625pt>
 File: media/protocol_forensics_headers.png Graphic file (type png)
 <use media/protocol_forensics_headers.png>
-Package pdftex.def Info: media/protocol_forensics_headers.png  used on input line 930.
+Package pdftex.def Info: media/protocol_forensics_headers.png  used on input line 935.
 (pdftex.def)             Requested size: 407.66833pt x 288.29054pt.
  [21
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.960 
+l.965 
        <./media/protocol_forensics_headers.png>]
 <media/auth_bypass_result.png, id=343, 489.83pt x 412.54124pt>
 File: media/auth_bypass_result.png Graphic file (type png)
 <use media/auth_bypass_result.png>
-Package pdftex.def Info: media/auth_bypass_result.png  used on input line 994.
+Package pdftex.def Info: media/auth_bypass_result.png  used on input line 999.
 (pdftex.def)             Requested size: 339.72592pt x 286.12675pt.
  [22]
 <media/idor_admin_profile.png, id=349, 768.8725pt x 206.7725pt>
 File: media/idor_admin_profile.png Graphic file (type png)
 <use media/idor_admin_profile.png>
-Package pdftex.def Info: media/idor_admin_profile.png  used on input line 1028.
+Package pdftex.def Info: media/idor_admin_profile.png  used on input line 1033.
 (pdftex.def)             Requested size: 385.02547pt x 103.54689pt.
  [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1032 
+l.1037 
         <./media/auth_bypass_result.png>]
 <media/xss_board_flag.png, id=358, 828.09375pt x 681.54625pt>
 File: media/xss_board_flag.png Graphic file (type png)
 <use media/xss_board_flag.png>
-Package pdftex.def Info: media/xss_board_flag.png  used on input line 1082.
+Package pdftex.def Info: media/xss_board_flag.png  used on input line 1087.
 (pdftex.def)             Requested size: 362.37569pt x 298.24855pt.
  [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1086 
+l.1091 
         <./media/idor_admin_profile.png>] [25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1119 
+l.1124 
         <./media/xss_board_flag.png>]
 <media/csrf_grant_flag.png, id=372, 831.105pt x 639.38875pt>
 File: media/csrf_grant_flag.png Graphic file (type png)
 <use media/csrf_grant_flag.png>
-Package pdftex.def Info: media/csrf_grant_flag.png  used on input line 1127.
+Package pdftex.def Info: media/csrf_grant_flag.png  used on input line 1132.
 (pdftex.def)             Requested size: 362.37569pt x 278.78552pt.
 <media/sqli_baseline.png, id=373, 844.15375pt x 263.98625pt>
 File: media/sqli_baseline.png Graphic file (type png)
 <use media/sqli_baseline.png>
-Package pdftex.def Info: media/sqli_baseline.png  used on input line 1159.
+Package pdftex.def Info: media/sqli_baseline.png  used on input line 1164.
 (pdftex.def)             Requested size: 407.66833pt x 127.48938pt.
  [26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1163 
+l.1168 
         <./media/csrf_grant_flag.png>]
 <media/sqli_union.png, id=380, 1035.87pt x 323.2075pt>
 File: media/sqli_union.png Graphic file (type png)
 <use media/sqli_union.png>
-Package pdftex.def Info: media/sqli_union.png  used on input line 1191.
+Package pdftex.def Info: media/sqli_union.png  used on input line 1196.
 (pdftex.def)             Requested size: 430.31812pt x 134.2667pt.
  [27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1211     \item \textbf
+l.1216     \item \textbf
                         {Search Method}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1211     \item \textbf
+l.1216     \item \textbf
                         {Search Method} <./media/sqli_baseline.png> <./media/sqli_union.png>]
 <media/ssrf_flag.png, id=390, 510.90875pt x 444.66125pt>
 File: media/ssrf_flag.png Graphic file (type png)
 <use media/ssrf_flag.png>
-Package pdftex.def Info: media/ssrf_flag.png  used on input line 1242.
+Package pdftex.def Info: media/ssrf_flag.png  used on input line 1247.
 (pdftex.def)             Requested size: 317.07614pt x 275.95851pt.
  [28]
 <media/path_passwd.png, id=397, 1066.98625pt x 211.79124pt>
 File: media/path_passwd.png Graphic file (type png)
 <use media/path_passwd.png>
-Package pdftex.def Info: media/path_passwd.png  used on input line 1278.
+Package pdftex.def Info: media/path_passwd.png  used on input line 1283.
 (pdftex.def)             Requested size: 430.31812pt x 85.41626pt.
  [29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.27}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1282 
+l.1287 
         <./media/ssrf_flag.png>]
 <media/path_secret.png, id=405, 1131.22626pt x 160.6pt>
 File: media/path_secret.png Graphic file (type png)
 <use media/path_secret.png>
-Package pdftex.def Info: media/path_secret.png  used on input line 1298.
+Package pdftex.def Info: media/path_secret.png  used on input line 1303.
 (pdftex.def)             Requested size: 430.31812pt x 61.09233pt.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1322.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1327.
 <media/xxe_passwd.png, id=406, 809.0225pt x 488.82625pt>
 File: media/xxe_passwd.png Graphic file (type png)
 <use media/xxe_passwd.png>
-Package pdftex.def Info: media/xxe_passwd.png  used on input line 1336.
+Package pdftex.def Info: media/xxe_passwd.png  used on input line 1341.
 (pdftex.def)             Requested size: 362.37569pt x 218.95537pt.
  [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1340 
+l.1345 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.29}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1340 
+l.1345 
         <./media/path_passwd.png> <./media/path_secret.png>]
 <media/xxe_flag.png, id=415, 809.0225pt x 488.82625pt>
 File: media/xxe_flag.png Graphic file (type png)
 <use media/xxe_flag.png>
-Package pdftex.def Info: media/xxe_flag.png  used on input line 1350.
+Package pdftex.def Info: media/xxe_flag.png  used on input line 1355.
 (pdftex.def)             Requested size: 362.37569pt x 218.95537pt.
  [31
 pdfTeX warning (ext4): destination with the same identifier (name{figure.30}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1368 
+l.1373 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.31}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1368 
+l.1373 
         <./media/xxe_passwd.png> <./media/xxe_flag.png>] [32] [33] [34] [35]
 <media/exd1_findmsp.png, id=445, 789.95125pt x 528.97626pt>
 File: media/exd1_findmsp.png Graphic file (type png)
 <use media/exd1_findmsp.png>
-Package pdftex.def Info: media/exd1_findmsp.png  used on input line 1630.
+Package pdftex.def Info: media/exd1_findmsp.png  used on input line 1635.
 (pdftex.def)             Requested size: 407.66833pt x 272.98679pt.
 <media/exd1_eip_control.png, id=446, 576.1525pt x 319.1925pt>
 File: media/exd1_eip_control.png Graphic file (type png)
 <use media/exd1_eip_control.png>
-Package pdftex.def Info: media/exd1_eip_control.png  used on input line 1639.
+Package pdftex.def Info: media/exd1_eip_control.png  used on input line 1644.
 (pdftex.def)             Requested size: 339.72592pt x 188.21478pt.
  [36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.32}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1643 
+l.1648 
         <./media/exd1_findmsp.png>]
 <media/exd1_badchars.png, id=453, 847.165pt x 464.73625pt>
 File: media/exd1_badchars.png Graphic file (type png)
 <use media/exd1_badchars.png>
-Package pdftex.def Info: media/exd1_badchars.png  used on input line 1648.
+Package pdftex.def Info: media/exd1_badchars.png  used on input line 1653.
 (pdftex.def)             Requested size: 385.02547pt x 211.21422pt.
 <media/exd1_jmpesp.png, id=454, 1261.71375pt x 660.4675pt>
 File: media/exd1_jmpesp.png Graphic file (type png)
 <use media/exd1_jmpesp.png>
-Package pdftex.def Info: media/exd1_jmpesp.png  used on input line 1657.
+Package pdftex.def Info: media/exd1_jmpesp.png  used on input line 1662.
 (pdftex.def)             Requested size: 430.31812pt x 225.26143pt.
  [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.33}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1661 
+l.1666 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.34}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1661 
+l.1666 
         <./media/exd1_eip_control.png> <./media/exd1_badchars.png>] [38
 pdfTeX warning (ext4): destination with the same identifier (name{figure.35}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1707 \end{verbatim}
+l.1712 \end{verbatim}
                       <./media/exd1_jmpesp.png>]
 <media/exd1_shell.png, id=469, 925.4575pt x 648.4225pt>
 File: media/exd1_shell.png Graphic file (type png)
 <use media/exd1_shell.png>
-Package pdftex.def Info: media/exd1_shell.png  used on input line 1731.
+Package pdftex.def Info: media/exd1_shell.png  used on input line 1736.
 (pdftex.def)             Requested size: 430.31812pt x 301.50345pt.
  [39
 pdfTeX warning (ext4): destination with the same identifier (name{figure.36}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1750 
+l.1755 
         <./media/exd1_shell.png>]
 <media/exd2_dep_enabled.png, id=477, 328.22626pt x 40.15pt>
 File: media/exd2_dep_enabled.png Graphic file (type png)
 <use media/exd2_dep_enabled.png>
-Package pdftex.def Info: media/exd2_dep_enabled.png  used on input line 1753.
+Package pdftex.def Info: media/exd2_dep_enabled.png  used on input line 1758.
 (pdftex.def)             Requested size: 226.48395pt x 27.70474pt.
 <media/exd2_dep_fail.png, id=478, 452.69125pt x 306.14375pt>
 File: media/exd2_dep_fail.png Graphic file (type png)
 <use media/exd2_dep_fail.png>
-Package pdftex.def Info: media/exd2_dep_fail.png  used on input line 1765.
+Package pdftex.def Info: media/exd2_dep_fail.png  used on input line 1770.
 (pdftex.def)             Requested size: 271.7835pt x 183.79977pt.
 <media/exd2_mona_rop.png, id=479, 603.25375pt x 375.4025pt>
 File: media/exd2_mona_rop.png Graphic file (type png)
 <use media/exd2_mona_rop.png>
-Package pdftex.def Info: media/exd2_mona_rop.png  used on input line 1787.
+Package pdftex.def Info: media/exd2_mona_rop.png  used on input line 1792.
 (pdftex.def)             Requested size: 339.72592pt x 211.4097pt.
  [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.37}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1791 
+l.1796 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.38}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1791 
+l.1796 
         <./media/exd2_dep_enabled.png> <./media/exd2_dep_fail.png>] [41
 pdfTeX warning (ext4): destination with the same identifier (name{figure.39}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1833 \end{verbatim}
+l.1838 \end{verbatim}
                       <./media/exd2_mona_rop.png>]
 <media/exd2_shell.png, id=495, 646.415pt x 324.21124pt>
 File: media/exd2_shell.png Graphic file (type png)
 <use media/exd2_shell.png>
-Package pdftex.def Info: media/exd2_shell.png  used on input line 1852.
+Package pdftex.def Info: media/exd2_shell.png  used on input line 1857.
 (pdftex.def)             Requested size: 385.02547pt x 193.10843pt.
  [42
 pdfTeX warning (ext4): destination with the same identifier (name{figure.40}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1871 \end{document}
+l.1876 \end{document}
                       <./media/exd2_shell.png>] (./Sample-Task-Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -959,13 +959,13 @@ Package rerunfilecheck Info: File `Sample-Task-Report.out' has not changed.
 Here is how much of TeX's memory you used:
  11943 strings out of 476182
  189538 string characters out of 5795594
- 1976975 words of memory out of 5000000
+ 1975975 words of memory out of 5000000
  33635 multiletter control sequences out of 15000+600000
  598694 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,11n,79p,712b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/ttveito/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/ttveito/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/ttveito/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Sample-Task-Report.pdf (44 pages, 3577331 bytes).
+Output written on Sample-Task-Report.pdf (44 pages, 3577678 bytes).
 PDF statistics:
  752 PDF objects out of 1000 (max. 8388607)
  426 compressed objects within 5 object streams

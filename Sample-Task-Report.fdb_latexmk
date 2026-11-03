@@ -1,10 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1793716563.13239 "/home/ttveito/Documents/etisk-greier/Sample-Task-Report.tex" "Sample-Task-Report.pdf" "Sample-Task-Report" 1793716565.32814 0
+["pdflatex"] 1793716908.64446 "/home/ttveito/Documents/etisk-greier/Sample-Task-Report.tex" "Sample-Task-Report.pdf" "Sample-Task-Report" 1793716910.82151 0
   "/etc/texmf/web2c/texmf.cnf" 1791892675.85471 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ttveito/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk" 1791920118.8742 17492 a84f8624846230ff1bf1c3c933a9c4a2 ""
   "/home/ttveito/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk" 1791892754.79605 21952 02317851063989620f5dd767321e59d4 ""
   "/home/ttveito/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk" 1791910038.69817 12644 7f5b36e62ce87993c3e27f683b1ab9e6 ""
-  "/home/ttveito/Documents/etisk-greier/Sample-Task-Report.tex" 1793712689.53921 87826 d14c5ace89d07751a67548273baed6db ""
+  "/home/ttveito/Documents/etisk-greier/Sample-Task-Report.tex" 1793716907.60962 88155 024c049e22c7b1eb862d4cf91892ab3a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -118,10 +118,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1791892694.69769 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1791892711 6800788 80752c703d581ccd848f7ab383f9b3ef ""
-  "Sample-Task-Report.aux" 1793716565.24727 17438 b5994c2be711e082dfcca92fd02dc863 "pdflatex"
-  "Sample-Task-Report.out" 1793716565.24827 5081 a04fbcaf1b7629be8685b1605f1f08b9 "pdflatex"
-  "Sample-Task-Report.tex" 1793712689.53921 87826 d14c5ace89d07751a67548273baed6db ""
-  "Sample-Task-Report.toc" 1793716565.24827 2938 b81c1b02b83a2e127242ce2224f747c0 "pdflatex"
+  "Sample-Task-Report.aux" 1793716910.73762 17438 b5994c2be711e082dfcca92fd02dc863 "pdflatex"
+  "Sample-Task-Report.out" 1793716910.73862 5081 a04fbcaf1b7629be8685b1605f1f08b9 "pdflatex"
+  "Sample-Task-Report.tex" 1793716907.60962 88155 024c049e22c7b1eb862d4cf91892ab3a ""
+  "Sample-Task-Report.toc" 1793716910.73962 2938 b81c1b02b83a2e127242ce2224f747c0 "pdflatex"
   "media/auth_bypass_result.png" 1791910561.20362 21122 9f27693ac85a31b2b368fff79275bb59 ""
   "media/bazaar_query.png" 1791892434.87712 48415 79529d4957acd53d5b45faedfd8bbfff ""
   "media/csrf_grant_flag.png" 1791977053.61094 64181 62ae9e211cef23e4a0ba09be0c8c7fa9 ""
